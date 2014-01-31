@@ -19,7 +19,6 @@ git clone https://github.com/alistairking/cc-template.git <project-name>
 cd <project-name>
 git submodule init
 git submodule update
-mkdir m4
 ~~~
 
 And then set about replacing the place-holder code and text with text specific to
@@ -82,6 +81,19 @@ alistair@gibi:~/dev/cc-template$ tools/hello-world -c 3 Alistair
 Hello Alistair, nice to meet you!
 Hello Alistair, nice to meet you!
 Hello Alistair, nice to meet you!
+~~~
+
+Black Magic
+-----------
+
+To turn a checked-out copy of cc-template into a brand-new git repository, do something like this:
+~~~
+git remote rm origin
+git checkout --orphan newBranch
+git add -A  # Add all files and commit them
+git commit
+git branch -D master  # Deletes the master branch
+git branch -m master  # Rename the current branch to master
 ~~~
 
 Please contact [@alistairking](https://github.com/alistairking) with any
