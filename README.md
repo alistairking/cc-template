@@ -13,9 +13,13 @@ build system, as well as a pre-installed copy of
 Usage
 -----
 
-To get started using this template, simply clone a copy:
+To get started using this template, simply clone a copy and init the cc-common submodule:
 ~~~
 git clone https://github.com/alistairking/cc-template.git <project-name>
+cd <project-name>
+git submodule init
+git submodule update
+mkdir m4
 ~~~
 
 And then set about replacing the place-holder code and text with text specific to
@@ -58,10 +62,12 @@ and this will do everything you need, including building a distribution tarball.
 If however, you have some unusual configuration, or you just want to do things
 manually, the following are the steps i usually take:
 
-1. Run `autoreconf`
-  - You may need to run `autoreconf -vfi` the very first time
-2. Run `./configure`
-3. Run `make`
+1. Run `./generate_log.sh`
+  - [generate_log.sh](generate_log.sh) builds the ChangeLog from the git commit log.
+2. Run `autoreconf`
+  - You will need to run `autoreconf -vfi` the very first time
+3. Run `./configure`
+4. Run `make`
 
 If you have built the example project as-is, there will be a sample program in
 [tools](tools):
