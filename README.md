@@ -2,7 +2,7 @@ cc-template
 ===========
 
 *cc-template* is designed to make starting an
-[@alistairking](https://github.com/alistairking) style C project fast and
+[@alistairking](https://github.com/alistairking)-style C project fast and
 painless.
 
 This template is the result of refinement across several large C projects that I
@@ -49,7 +49,7 @@ boilerplate code that is contained in the project.
 Compilation
 -----------
 
-Once customization and some coding is complete (or before, `cc-template` is a
+Once customization and some coding is complete (or before -- `cc-template` is a
 fully-working example!), you can run the build scripts.
 
 Chances are, you can simply run the [build_latest.sh](build_latest.sh) script
