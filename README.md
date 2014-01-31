@@ -96,6 +96,15 @@ git branch -D master  # Deletes the master branch
 git branch -m master  # Rename the current branch to master
 ~~~
 
+Note that you now have no upstream set. If you are going to host the repository on GitHub, create the new repo there and it will give you instructions how to push an existing repo. If hosting the repo somewhere else (e.g. via SSH), you can do something like (assuming you have run `git init --bare` on the other machine):
+~~~
+git remote add origin user@host.com:/path/to/repo/<project-name>.git
+git push -u origin master
+~~~
+
+Credit/Blame
+------------
+
 Please contact [@alistairking](https://github.com/alistairking) with any
 questions or insults.
 
