@@ -1,5 +1,5 @@
 cc-template
-###########
+===========
 
 *cc-template* is designed to make starting an @alistairking style C project fast
 and painless.
