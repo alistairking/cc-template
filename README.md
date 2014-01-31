@@ -1,8 +1,9 @@
 cc-template
 ===========
 
-*cc-template* is designed to make starting an @alistairking style C project fast
-and painless.
+*cc-template* is designed to make starting an
+[@alistairking](https://github.com/alistairking) style C project fast and
+painless.
 
 This template is the result of refinement across several large C projects that I
 have worked on, and contains all scripts needed for a complete autotools-managed
@@ -77,6 +78,7 @@ Hello Alistair, nice to meet you!
 Hello Alistair, nice to meet you!
 ~~~
 
-Please contact @alistairking with any questions or insults.
+Please contact [@alistairking](https://github.com/alistairking) with any
+questions or insults.
 
 Enjoy!
