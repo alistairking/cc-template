@@ -24,8 +24,8 @@
  */
 
 
-#ifndef __LIBIPMETA_INT_H
-#define __LIBIPMETA_INT_H
+#ifndef __HELLO_INT_H
+#define __HELLO_INT_H
 
 /* @@ always include our public header so that internal users don't need to */
 #include "hello.h"
