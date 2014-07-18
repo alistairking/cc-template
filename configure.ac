@@ -22,8 +22,6 @@
 # along with @@PROJECT_NAME.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-AC_PREREQ([2.68])
-
 ## @@ replace all instancnes of "hello" with project name e.g. "corsaro"
 AC_INIT([hello], [0.0.0], [corsaro-info@caida.org])
 
