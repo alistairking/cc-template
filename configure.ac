@@ -132,6 +132,8 @@ AC_SUBST([HELLO_MINOR_VERSION])
 ## @@add any additional Makefile.am files needed. e.g. if subdirs created in lib
 AC_CONFIG_FILES([Makefile
 		common/Makefile
+                common/libinterval3/Makefile
+                common/libinterval3/rb_tree/Makefile
 		common/libpatricia/Makefile
 		common/libcsv/Makefile
 		lib/Makefile
