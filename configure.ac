@@ -100,9 +100,11 @@ AC_FUNC_REALLOC
 # Checks for libraries.
 # please use libwandio for threaded IO
 ## @@remove if no file IO needed
-AC_SEARCH_LIBS([wandio_create], [wandio trace], ,[AC_MSG_ERROR(
-		 [libwandio required (included with libtrace since 3.0.15)]
-		 )])
+AC_SEARCH_LIBS([wandio_create], [wandio trace], with_wandio=yes,
+               [AC_MSG_ERROR(
+	         [libwandio required (included with libtrace since 3.0.15)]
+	       )])
+AM_CONDITIONAL([WITH_WANDIO], [test x$with_wandio = xyes])
 
 ## @@ add more AC_CHECK_LIB / AC_SEARCH_LIBS calls here for needed libraries
 
